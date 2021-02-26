@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://thumbs.dreamstime.com/b/selective-empty-wooden-table-blurred-background-abstract-front-coffee-shop-restaurant-display-product-montage-134838889.jpg")
+      no-repeat center center fixed;
+  background-size: cover;
+}
+
+.formtitle {
+  text-align: center;
+  color: white;
+}
+
+#title {
+  font-weight: 600;
+  font-size: 3.2em;
+  margin-bottom: 0;
+}
+#description {
+  font-size: 1.9em;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#survey-form {
+  background-color: bisque;
+  width: 50%;
+  height: auto;
+  margin-left: 25%;
+  line-height: 30px;
+  font-size: 1.9em;
+}
+
+.form-content {
+  margin-left: 15px;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+  width: 80%;
+  height: 26px;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.recommend,
+.meal {
+  margin-bottom: 25px;
+}
+
+#comment {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+button {
+  width: 50%;
+  height: 30px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-left: 25%;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 80%;
+  }
+  #title {
+    font-size: 2.2em;
+  }
+  #description {
+    font-size: 1.4em;
+    margin-top: 8px;
+  }
+  #survey-form {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    line-height: 25px;
+    font-size: 1.5em;
+  }
+  #name,
+  #email,
+  #number,
+  #dropdown {
+    width: 80%;
+    height: 20px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+  }
+  button {
+    width: 45%;
+    height: 25px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 25%;
+  }
+}

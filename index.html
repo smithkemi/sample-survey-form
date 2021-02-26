@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div class="formtitle">
+      <h1 id="title">Eat and Go Survey Form</h1>
+      <p id="description">
+        This survey is to help us serve you better. it would take one minute to
+        fill.
+      </p>
+    </div>
+    <form action="GET" id="survey-form">
+      <div class="form-content">
+        <div>
+          <label for="name" class="full-name">Full name(Optional)</label><br />
+          <input type="text" id="name" value="Enter your full name" /> <br />
+        </div>
+        <div>
+          <label for="email">Email </label><br />
+          <input
+            type="email"
+            id="email"
+            min="5"
+            value="Enter your Email"
+            required
+          />
+          <br />
+        </div>
+        <div>
+          <label for="number">Age(Optional)</label><br />
+          <input
+            type="number"
+            id="number"
+            min="1"
+            max="90"
+            required
+            value="10"
+          /><br />
+        </div>
+        <div>
+          <label for="dropdown">How frequent is your visit </label><br />
+          <select name="visit" id="dropdown">
+            <option value="">Daily</option>
+            <option value="">Weekly</option>
+            <option value="">Monthly</option>
+          </select>
+          <br />
+        </div>
+        <div class="recommend">
+          would you recommend Eat and Go to a friend?<br />
+          <input type="radio" id="yes" name="choice" value="yes" />
+          <label for="yes">Yes</label><br />
+          <input type="radio" id="no" name="choice" value="no" />
+          <label for="no">No</label><br />
+          <input type="radio" id="notsure" name="choice" value="not sure" />
+          <label for="notsure">Not Sure</label><br />
+        </div>
+        <div class="meal">
+          What is your favorite meal on our menu?<br />
+          <input type="checkbox" id="meal1" value="Jollof rice" />
+          <label for="meal1">Jollof Rice</label>
+          <br />
+          <input type="checkbox" id="meal2" value="Fried rice" />
+          <label for="meal2">Fried Rice</label>
+          <br />
+          <input type="checkbox" id="meal3" value="smoked Turkey" />
+          <label for="meal3">Smoked Turkey</label>
+          <br />
+          <input type="checkbox" id="meal4" value="snacks" />
+          <label for="meal4"> Snacks</label>
+          <br />
+          <input type="checkbox" id="meal5" value="chips and chicken" />
+          <label for="meal5">Chips and Chicken</label>
+          <br />
+          <input type="checkbox" id="meal6" value="Nigeria native meals" />
+          <label for="meal6">Nigeria native meal</label>
+          <br />
+          <input type="checkbox" id="meal7" value="drink signatures" />
+          <label for="meal7">Drink Signatures</label>
+          <br />
+          <input type="checkbox" id="meal8" value="foreign recipe" />
+          <label for="meal8">Foreign Recipe</label>
+          <br />
+        </div>
+        <div>
+          <label for="comment">Any comments or suggestions?</label><br />
+          <textarea name="comments" id="comment" cols="30" rows="10">
+Enter your comment here...</textarea
+          ><br />
+        </div>
+        <button type="submit">submit</button>
+      </div>
+    </form>
+  </body>
+</html>
